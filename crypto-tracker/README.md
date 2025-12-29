@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# 🪙 Crypto Tracker (암호화폐 시세 트래커)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Nomad Coder - React JS 마스터 클래스
 
-## Available Scripts
+실시간 암호화폐 API 데이터를 활용하여 시세 정보를 확인하고, 차트를 통해 가격 변동을 시각화하는 React 프로젝트입니다.
 
-In the project directory, you can run:
+## 🚀 주요 기능
 
-### `npm start`
+- **실시간 시세 조회**: 외부 Crypto API를 연동하여 상위 100개의 암호화폐 리스트를 제공합니다.
+- **상세 정보 및 차트 시각화**: `Apex Charts`를 활용하여 캔들스틱 및 라인 차트로 시세 변화를 한눈에 파악합니다.
+- **다크 모드 지원**: `Styled Components`의 ThemeProvider와 `Recoil` 상태 관리를 이용한 다크/라이트 모드 전환 기능을 제공합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠 기술 스택
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Framework**: React 18
+- **Language**: TypeScript
+- **State Management**: Recoil (테마 상태 관리)
+- **Data Fetching**: React Query (Server State 관리 및 캐싱)
+- **Styling**: Styled Components (디자인 시스템 및 다크모드)
+- **Visualization**: ApexCharts (시계열 데이터 시각화)
+- **Routing**: React Router 6
 
-### `npm test`
+## 💡 학습 포인트
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React Query**: API 응답 데이터를 캐싱하여 불필요한 네트워크 요청을 줄이고 로딩 상태를 효율적으로 관리하는 법을 익혔습니다.
+- **Declarative Routing**: React Router v6의 `Outlet`과 `Link` 상태 전달(`state`)을 활용한 선언적 라우팅을 구현했습니다.
+- **TypeScript Interface**: API 데이터 구조를 인터페이스로 정의하여 런타임 에러를 방지하고 자동 완성을 활용한 개발 생산성을 높였습니다.
 
-### `npm run build`
+## ScreenShot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](https://github.com/user-attachments/assets/51b31a93-b8b5-4304-a905-d94b29815c01)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

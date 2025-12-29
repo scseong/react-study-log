@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 480px;
@@ -75,6 +75,7 @@ export const CoinImg = styled.img`
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  border-radius: 50%;
 `;
 
 export const Overview = styled.div`

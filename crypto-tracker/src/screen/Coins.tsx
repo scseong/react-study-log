@@ -1,7 +1,7 @@
-import { useQuery } from 'react-query';
-import { Link, Outlet } from 'react-router-dom';
-import { fetchCoins } from '../api';
-import { ICoins } from '../typings/db';
+import { useQuery } from "react-query";
+import { Link, Outlet } from "react-router-dom";
+import { fetchCoins } from "../api";
+import { ICoins } from "../typings/db";
 import {
   Container,
   Header,
@@ -10,10 +10,10 @@ import {
   Title,
   Loader,
   CoinImg,
-} from './styles';
+} from "./styles";
 
 const Coins = () => {
-  const { isLoading, data } = useQuery<ICoins[]>('allCoins', fetchCoins);
+  const { isLoading, data } = useQuery<ICoins[]>("allCoins", fetchCoins);
 
   return (
     <Container>
@@ -28,8 +28,12 @@ const Coins = () => {
             <Coin key={coin.id}>
               <Link to={`/${coin.id}`} state={{ name: coin.name }}>
                 <CoinImg
-                  src={`https://coinicons-api.vercel.app/api/icon/${coin.symbol.toLowerCase()}`}
+                  src={`https://cryptoicon-api.pages.dev/icons/128/color/${coin.symbol.toLowerCase()}.png`}
                   alt="coin"
+                  onError={(e) => {
+                    e.currentTarget.src =
+                      "https://dummyimage.com/128x128/eee/eee";
+                  }}
                 />
                 {coin.name}
               </Link>
